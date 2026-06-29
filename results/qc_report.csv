@@ -1,0 +1,7 @@
+metric,value
+n_cells,152513.0
+n_genes,24189.0
+median_n_genes_per_cell,1066.0
+median_total_counts_per_cell,2771.0
+median_pct_mt,5.07380073800738
+n_donors,16.0

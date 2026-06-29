@@ -1,0 +1,22 @@
+{
+  "title": "lncRNA-aware single-cell re-analysis of the human Liver Cell Atlas: code and result tables",
+  "description": "Analysis code, intermediate result tables, and donor-level validation for the manuscript \"MEG3 is a donor-reproducible endothelial lncRNA in the human liver single-cell atlas\" (Hidenori Tani). Primary data are public via GEO accession GSE192742 and are not redistributed here.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Tani, Hidenori",
+      "orcid": "0000-0001-6390-4136",
+      "affiliation": "Department of Health Pharmacy, Yokohama University of Pharmacy"
+    }
+  ],
+  "keywords": [
+    "long noncoding RNA",
+    "single-cell RNA sequencing",
+    "liver sinusoidal endothelial cell",
+    "MEG3",
+    "KCNQ1OT1",
+    "metabolic dysfunction-associated steatotic liver disease",
+    "pseudotime"
+  ]
+}

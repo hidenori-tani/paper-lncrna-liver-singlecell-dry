@@ -1,0 +1,4 @@
+gene_id,gene_name,lineage,stability_class,peak_bin,spearman_rho,log2fc_max_min
+MEG3,MEG3,LSEC,unknown,6,-0.3443934530674414,3.968244
+ZFAS1,ZFAS1,LSEC,short,9,0.3342664475460078,2.5382144
+LINC00996,LINC00996,Cholangiocyte,unknown,0,-0.3526724774108222,19.668776

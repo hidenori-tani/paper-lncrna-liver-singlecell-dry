@@ -1,0 +1,26 @@
+name: liver-singlecell-lncrna
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - jupyterlab
+  - scanpy>=1.10
+  - anndata>=0.10
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - leidenalg
+  - python-igraph
+  - harmonypy
+  - pip:
+      - scdblfinder-py
+      - symphonypy
+      - scarches
+      - gseapy
+      - pydeseq2

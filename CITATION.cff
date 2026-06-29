@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript and this archived release."
+title: "lncRNA-aware single-cell re-analysis of the human Liver Cell Atlas: code and result tables"
+type: software
+authors:
+  - family-names: Tani
+    given-names: Hidenori
+    orcid: "https://orcid.org/0000-0001-6390-4136"
+    affiliation: "Department of Health Pharmacy, Yokohama University of Pharmacy"
+license: MIT
+keywords:
+  - long noncoding RNA
+  - single-cell RNA sequencing
+  - liver sinusoidal endothelial cell
+  - MEG3
+  - KCNQ1OT1
+  - pseudotime

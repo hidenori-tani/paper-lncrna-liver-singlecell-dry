@@ -1,0 +1,19 @@
+# primary data (public via GEO GSE192742; not redistributed here)
+data/
+*.zip
+
+# large intermediates
+*.h5ad
+
+# regenerated figure outputs
+figures/output/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+
+# os
+.DS_Store
