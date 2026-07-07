@@ -128,8 +128,8 @@ anndata 0.12, harmonypy 2.0, statsmodels, scikit-learn, matplotlib, pandas.
 ## Citation
 
 If you use this code, please cite the associated manuscript and this archived
-release. Zenodo DOI: [10.5281/zenodo.21025051](https://doi.org/10.5281/zenodo.21025051)
-(concept DOI — resolves to the latest version).
+release. Zenodo concept DOI (resolves to the latest version):
+[10.5281/zenodo.21025050](https://doi.org/10.5281/zenodo.21025050).
 
 ## License
 
