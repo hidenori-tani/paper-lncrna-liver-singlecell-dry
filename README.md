@@ -2,7 +2,7 @@
 
 Analysis code and result tables for the manuscript:
 
-> **MEG3 is a donor-reproducible endothelial lncRNA replicated across two human liver single-cell atlases**
+> **An lncRNA-aware single-cell framework with donor-level validation identifies reproducible MEG3 enrichment in human liver sinusoidal endothelial cells**
 > Hidenori Tani — Department of Health Pharmacy, Yokohama University of Pharmacy
 > ORCID: [0000-0001-6390-4136](https://orcid.org/0000-0001-6390-4136)
 
@@ -21,13 +21,32 @@ at the **donor level** (per-donor detection rates; paired Wilcoxon across donors
 using the original publication's own cell-type annotation, independently of our
 clustering.
 
-Headline result: *MEG3* is a donor-reproducible endothelial (liver sinusoidal
-endothelial cell, LSEC) lncRNA — per-donor median detection 78% in LSECs versus
-≤ 2.9% in every other cell type; two-sided paired Wilcoxon q = 0.0098; higher in all
-nine informative donors. *KCNQ1OT1* is depleted from hepatocytes but is not
-LSEC-specific. A within-lineage pseudotime screen flagged exploratory candidates
-(*MEG3*, *ZFAS1*, *LINC00996*) that did not validate as Lean-versus-Obese
-differences at the donor level.
+Headline result: *MEG3* is reproducibly enriched in liver sinusoidal endothelial
+cells (LSECs) — per-donor median detection 78% in LSECs versus ≤ 2.9% in every other
+cell type with at least three informative donors; two-sided paired Wilcoxon
+q = 0.0098; higher in all nine informative donors. The enrichment also holds as
+abundance rather than detection frequency (donor pseudobulk 6.27 versus 1.05 CP10K
+for the next-ranked cell type).
+
+> ### ⚠ What the 2026-08 revision withdraws
+>
+> Three claims made in the version first submitted are **withdrawn** after an audit
+> of the lineage assignment against the source publication's own annotation:
+>
+> 1. **The three "progression-coupled" lncRNAs** (*MEG3*, *ZFAS1*, *LINC00996*).
+>    Holding the pseudotime fixed and restricting to correctly annotated endothelial
+>    cells, *MEG3* goes from ρ = −0.315 to +0.057 and *ZFAS1* from +0.324 to −0.091;
+>    both reverse sign. The correlations came from contaminating cells.
+> 2. **The *KCNQ1OT1* hepatocyte-depletion claim.** The lineage it was measured in
+>    contains no annotated hepatocytes (95% of it is neutrophils); the matrix holds
+>    only 24 annotated hepatocytes in total.
+> 3. **The *LINC00996* cholangiocyte result.** The lineage it was measured in
+>    contains no annotated cholangiocytes.
+>
+> The cause is a marker-score `idxmax` lineage assignment with no acceptance
+> threshold. Purity against the published annotation is 77.3% for the LSEC lineage
+> but **0%** for the lineages named "cholangiocyte" and "hepatocyte".
+> `revision_analysis/` reproduces every one of these checks.
 
 **Independent-cohort replication.** The *MEG3*-in-LSEC result reproduces in a fully
 independent human liver atlas (MacParland et al. 2018; GEO **GSE115469**, 5 donors),
@@ -68,6 +87,13 @@ figures/       figure-generation scripts
 scripts/       donor_level_analysis.py (donor-level validation),
                replication_macparland.py (independent-cohort replication, GSE115469),
                make_fig6.py, parallel_download.sh (data fetch)
+revision_analysis/  analyses added at the 2026-08 revision: the annotation audit,
+               the re-screen under both label sets, the fixed-pseudotime
+               contamination test, the root-sensitivity sweep, the abundance and
+               dispersion measures, the feature-selection benchmark, and the
+               scripts that draw every figure of the revised manuscript
+lib/           figstyle.py (journal figure style used by the revision figures)
+results/revision/   result tables produced by revision_analysis/
 results/       intermediate result tables (CSV); results/donor_level/ holds the
                per-donor validation tables; results/replication_macparland/ holds
                the MacParland independent-cohort replication tables + figure

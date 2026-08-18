@@ -1,0 +1,4 @@
+typeSample,n_donors_paired,detection_median_endo,detection_median_other,detection_p_onesided,detection_n_donors_endo_higher,pseudobulk_median_endo,pseudobulk_median_other,pseudobulk_p_onesided,pseudobulk_n_donors_endo_higher
+citeSeq,3,0.7619047619047619,0.0006684491978609625,0.125,3.0,5.102924157789705,0.003131008846274119,0.125,3.0
+nucSeq,1,,,,,,,,
+scRnaSeq,9,0.7786259541984732,0.002109020116807268,0.001953125,9.0,6.294839570879447,0.011947481832838338,0.001953125,9.0

@@ -1,0 +1,3 @@
+feature_selection,n_clusters,ARI_vs_published,AMI_vs_published
+forced lncRNA included (n_HVG=4750),31,0.2631634938573714,0.6243099976373209
+standard HVG only (n_HVG=4000),31,0.26044488686651335,0.6195763113538457

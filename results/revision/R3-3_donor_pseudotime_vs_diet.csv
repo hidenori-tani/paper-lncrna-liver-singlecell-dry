@@ -1,0 +1,5 @@
+label_set,lineage,n_donors,n_lean,n_obese,mean_pt_lean,mean_pt_obese,mannwhitney_p
+lineage_leiden,LSEC,11,10,1,0.15803021,0.030124396,
+lineage_pub,LSEC,11,10,1,0.18505844,0.10313293,
+lineage_leiden,Kupffer,14,11,3,0.4752761,0.5005596,0.6593406796455383
+lineage_pub,Kupffer,15,12,3,0.2814777,0.3042949,0.7340659499168396

@@ -1,0 +1,4 @@
+library_type,cells_in_published_annotation,cells_present_in_count_matrix,percent_present
+scRnaSeq,82936,78962,95.2
+citeSeq,73580,73580,100.0
+nucSeq,11082,17,0.2

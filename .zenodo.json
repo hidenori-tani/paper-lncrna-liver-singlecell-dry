@@ -1,6 +1,6 @@
 {
   "title": "lncRNA-aware single-cell re-analysis of the human Liver Cell Atlas: code and result tables",
-  "description": "Analysis code, intermediate result tables, donor-level validation, and independent-cohort replication for the manuscript \"MEG3 is a donor-reproducible endothelial lncRNA replicated across two human liver single-cell atlases\" (Hidenori Tani). Includes an lncRNA-aware single-cell feature-selection pipeline, a donor-level detection-rate validation framework, and a replication of the MEG3-in-LSEC result in the independent MacParland et al. 2018 atlas. Primary data are public via GEO accessions GSE192742 (Guilliams et al. 2022) and GSE115469 (MacParland et al. 2018) and are not redistributed here.",
+  "description": "Analysis code, intermediate result tables, donor-level validation, independent-cohort replication, and the revision analyses for the manuscript \"An lncRNA-aware single-cell framework with donor-level validation identifies reproducible MEG3 enrichment in human liver sinusoidal endothelial cells\" (Hidenori Tani). Includes an lncRNA-aware single-cell feature-selection pipeline, a donor-level detection-rate validation framework, a replication of the MEG3-in-LSEC result in the independent MacParland et al. 2018 atlas, and the 2026-08 revision analyses: an audit of the marker-score lineage assignment against the source publication's annotation, the re-screen under both label sets, a fixed-pseudotime contamination test, a 20-root sensitivity sweep, abundance and dispersion measures, and a feature-selection benchmark. That audit withdraws three claims of the first submitted version (the three progression-coupled lncRNAs and the KCNQ1OT1 hepatocyte depletion); see the README. Primary data are public via GEO accessions GSE192742 (Guilliams et al. 2022) and GSE115469 (MacParland et al. 2018) and are not redistributed here.",
   "upload_type": "software",
   "license": "MIT",
   "creators": [
@@ -17,6 +17,9 @@
     "MEG3",
     "KCNQ1OT1",
     "metabolic dysfunction-associated steatotic liver disease",
-    "pseudotime"
+    "pseudotime",
+    "annotation audit",
+    "negative result",
+    "reproducibility"
   ]
 }

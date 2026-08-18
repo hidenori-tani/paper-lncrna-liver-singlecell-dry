@@ -1,0 +1,8 @@
+assigned_lineage,n_cells,published_label_expected,n_matching,purity_pct,n_published_total,recall_pct,largest_actual_label,largest_actual_n
+Tcell,61329,(no single counterpart),,,,,T cells,60787
+NK,39634,(no single counterpart),,,,,T cells,16550
+Kupffer,35366,(no single counterpart),,,,,Mono+mono derived cells,23592
+Cholangiocyte,7432,Cholangiocytes,0.0,0.0,155.0,0.0,Mono+mono derived cells,5899
+Bcell,4626,(no single counterpart),,,,,B cells,2297
+Hepatocyte,2982,Hepatocytes,0.0,0.0,24.0,0.0,Neutrophils,2840
+LSEC,1190,Endothelial cells,920.0,77.3,929.0,99.0,Endothelial cells,920
